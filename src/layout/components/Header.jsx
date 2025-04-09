@@ -53,7 +53,11 @@ export default function Header() {
                       display: "block",
                       transition:"all ease 0.2s",
                     },
-                  }} onClick={() => nav(item.to)}>
+                  }} onClick={() => {
+                    if (!item.children && item.to) {
+                      nav(item.to);
+                    }
+                  }}>
                       <Stack flexDirection={'row'} alignItems={'center'} sx={{
                         marginLeft:'20px',
                         cursor:'pointer',
@@ -97,21 +101,21 @@ export default function Header() {
                             }}
                           >
                            {item.children.map((child, idx) => (
-                        <Box
-                          key={idx}
-                          onClick={() => nav(child.to)}
-                          sx={{
-                            padding: "20px 10px",
-                            transition: "all ease 0.2s",
-                            color:'#4d494994',
-                            cursor: "pointer",
-                            "&:hover": {
-                              color: "#000",
-                            }
-                          }}
-                        >
-                          {child.name}
-                        </Box>
+                              <Box
+                                key={idx}
+                                onClick={() => nav(child.to)}
+                                sx={{
+                                  padding: "20px 10px",
+                                  transition: "all ease 0.2s",
+                                  color:'#4d494994',
+                                  cursor: "pointer",
+                                  "&:hover": {
+                                    color: "#000",
+                                  }
+                                }}
+                              >
+                                {child.name}
+                              </Box>
                               ))}
 
                         </Stack>

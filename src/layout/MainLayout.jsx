@@ -23,7 +23,7 @@ export default function MainLayout({children}) {
                 </Container>
             </Grid>
             
-            <Grid item sx={{ flexGrow: 1 }}>                
+            <Grid item >
                 {children}
             </Grid>
 
