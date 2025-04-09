@@ -1,6 +1,6 @@
 import React from 'react'
 import ScrollToTop from 'react-scroll-to-top'
-import {Grid} from '@mui/material';
+import {Container, Grid} from '@mui/material';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
@@ -18,10 +18,12 @@ export default function MainLayout({children}) {
             }} 
         >
             <Grid item>
-                <Header />
+                <Container>
+                    <Header />
+                </Container>
             </Grid>
             
-            <Grid item sx={{ flexGrow: 1 }}>
+            <Grid item sx={{ flexGrow: 1 }}>                
                 {children}
             </Grid>
 
