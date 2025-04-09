@@ -17,10 +17,8 @@ export default function MainLayout({children}) {
                  overflow:'visible'
             }} 
         >
-            <Grid item>
-                <Container>
-                    <Header />
-                </Container>
+            <Grid item>                
+                <Header />                
             </Grid>
             
             <Grid item >

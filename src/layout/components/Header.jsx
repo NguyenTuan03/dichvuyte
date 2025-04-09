@@ -1,24 +1,25 @@
-import { Box, Button, Grid, Stack, Typography } from '@mui/material'
+import { Box, Button, Container, Grid, Stack, Tooltip, Typography } from '@mui/material'
 import React from 'react'
 import { NAVIGATION } from '../../enum/navigation'
 import { useNavigate } from 'react-router'
-
+import FacebookIcon from '@mui/icons-material/Facebook';
 export default function Header() {
   const HEADER = [
     {
       name: 'Hộp thư',
       img: '/envelop.svg',
-      email:'admin@binhminhmedic.com'
+      email:'taihungqy2@gmail.com'
     },
     {
       name: 'Đường dây nóng',
       img: '/phone.svg',
-      email:'0976 858 115'
+      email:'0964345344'
     },
   ]
   const nav = useNavigate()
   return (
     <Box width={"100%"}>
+      <Container>
         <Stack height={'112px'} flexDirection={"row"} alignItems={"center"} justifyContent={"space-between"}>
             <img src='/Logo.jpg' width={'120px'} height={'112px'}/>
             <Grid container flex={1}>
@@ -40,8 +41,9 @@ export default function Header() {
               </Grid>
             </Grid>            
         </Stack> 
+      </Container>
         {/* Navigation */}
-        <Stack height={'55px'} flexDirection={"row"} alignItems={"center"}>
+        <Stack height={'55px'} flexDirection={"row"} alignItems={"center"} justifyContent={'center'}>
             {
               NAVIGATION.map((item, index) => {
                 return (
@@ -125,6 +127,68 @@ export default function Header() {
                 )
               })
             }
+            <Tooltip title="Follow on Facebook" placement="top">
+            <Typography
+              component="a"
+              href="https://www.facebook.com/muavui.nguoi.12139862"
+              target="_blank"
+              rel="noopener noreferrer"
+              width={"30px"}
+              height={"30px"}
+              sx={{
+                borderRadius: '50%',
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                marginLeft: '20px'
+              }}
+            >
+              <img src="/fb.png" width="100%" height="100%" />
+            </Typography>
+          </Tooltip>
+
+          <Tooltip title="Follow on Tiktok" placement="top">
+            <Typography
+              component="a"
+              href="https://www.tiktok.com/@nguyentaihungqy"
+              target="_blank"
+              rel="noopener noreferrer"
+              width={"30px"}
+              height={"30px"}
+              sx={{
+                borderRadius: '50%',
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                marginLeft: '20px'
+              }}
+            >
+              <img src="/tiktok.svg" width="100%" height="100%" />
+            </Typography>
+          </Tooltip>
+
+          <Tooltip title="Follow on Youtube" placement="top">
+            <Typography
+              component="a"
+              href="https://www.youtube.com/@TaiHungNguyen"
+              target="_blank"
+              rel="noopener noreferrer"
+              width={"30px"}
+              height={"30px"}
+              sx={{
+                borderRadius: '50%',
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                marginLeft: '20px'
+              }}
+            >
+              <img src="/youtube.svg" width="100%" height="100%" />
+            </Typography>
+          </Tooltip>
         </Stack>
     </Box>
   )
