@@ -35,7 +35,7 @@ const ChoThueXeCapCuu = () => {
             p: { xs: 3, md: 6 },
             mb: 8,
             borderRadius: '16px',
-            background: 'linear-gradient(135deg, #e53935 0%, #d32f2f 100%)',
+            background: 'linear-gradient(135deg, #00796b 0%, #004d40 100%)',
             color: '#fff',
             position: 'relative',
             overflow: 'hidden',
@@ -71,7 +71,7 @@ const ChoThueXeCapCuu = () => {
                 px: 6,
                 py: 1.5,
                 backgroundColor: '#fff',
-                color: '#d32f2f',
+                color: 'black',
                 fontWeight: 600,
                 borderRadius: '8px',
                 '&:hover': { backgroundColor: '#f5f5f5' },
@@ -95,16 +95,16 @@ const ChoThueXeCapCuu = () => {
                 mb: 4,
                 width  :'1050px',
                 borderRadius: '12px',
-                borderLeft: '6px solid #d32f2f',
+                borderLeft: '6px solid #00796b',
                 transition: 'transform 0.3s, box-shadow 0.3s',
                 '&:hover': { transform: 'translateY(-5px)', boxShadow: theme.shadows[8] },
               }}
             >
               <Stack direction="row" alignItems="center" spacing={2} sx={{ mb: 3 }}>
-                <Avatar sx={{ bgcolor: '#d32f2f', width: 50, height: 50 }}>
+                <Avatar sx={{ bgcolor: '#00796b', width: 50, height: 50 }}>
                   <LocalHospital sx={{ fontSize: 28 }} />
                 </Avatar>
-                <Typography variant="h5" fontWeight={700} color="#d32f2f">
+                <Typography variant="h5" fontWeight={700} color="black">
                   Mô Tả Dịch Vụ
                 </Typography>
               </Stack>
@@ -134,17 +134,17 @@ const ChoThueXeCapCuu = () => {
               }}
             >
               <Stack direction="row" alignItems="center" spacing={2} sx={{ mb: 3 }}>
-                <Avatar sx={{ bgcolor: '#d32f2f', width: 50, height: 50 }}>
+                <Avatar sx={{ bgcolor: '#00796b', width: 50, height: 50 }}>
                   <DirectionsCar sx={{ fontSize: 28 }} />
                 </Avatar>
-                <Typography variant="h5" fontWeight={700} color="#d32f2f">
+                <Typography variant="h5" fontWeight={700} color="#00796b">
                   Lợi Ích Khi Sử Dụng Dịch Vụ
                 </Typography>
               </Stack>
               <Grid container spacing={3}>
                 <Grid item xs={12} sm={6}>
                   <Stack direction="row" spacing={2} alignItems="center">
-                    <Avatar sx={{ bgcolor: '#e53935', width: 40, height: 40 }}>1</Avatar>
+                    <Avatar sx={{ bgcolor: '#00796b', width: 40, height: 40 }}>1</Avatar>
                     <Typography variant="body1" sx={{ fontSize: '16px', lineHeight: 1.8 }}>
                       Xe di chuyển nhanh chóng trong các tình huống khẩn cấp.
                     </Typography>
@@ -152,7 +152,7 @@ const ChoThueXeCapCuu = () => {
                 </Grid>
                 <Grid item xs={12} sm={6}>
                   <Stack direction="row" spacing={2} alignItems="center">
-                    <Avatar sx={{ bgcolor: '#e53935', width: 40, height: 40 }}>2</Avatar>
+                    <Avatar sx={{ bgcolor: '#00796b', width: 40, height: 40 }}>2</Avatar>
                     <Typography variant="body1" sx={{ fontSize: '16px', lineHeight: 1.8 }}>
                       Đội ngũ y tế tận tâm, hỗ trợ suốt hành trình.
                     </Typography>
@@ -178,14 +178,14 @@ const ChoThueXeCapCuu = () => {
       flex: 1,
       p: 4,
       borderRadius: '12px',
-      background: 'linear-gradient(to bottom, #ffebee 0%, #ffcdd2 100%)',
+      background: 'linear-gradient(to bottom, #ffebee 0%, #00796b 100%)',
     }}
   >
     <Stack direction="row" alignItems="center" spacing={2} sx={{ mb: 3 }}>
-      <Avatar sx={{ bgcolor: '#d32f2f', width: 50, height: 50 }}>
+      <Avatar sx={{ bgcolor: '#00796b', width: 50, height: 50 }}>
         <AccessTime sx={{ fontSize: 28 }} />
       </Avatar>
-      <Typography variant="h5" fontWeight={700} color="#d32f2f">
+      <Typography variant="h5" fontWeight={700} color="#00796b">
         Quy Trình Đặt Xe
       </Typography>
     </Stack>
@@ -210,7 +210,7 @@ const ChoThueXeCapCuu = () => {
       flex: 1,
       p: 4,
       borderRadius: '12px',
-      background: 'linear-gradient(to bottom, #d32f2f 0%, #b71c1c 100%)',
+      background: 'linear-gradient(to bottom, #26c4b2 0%, #515858 100%)',
       color: '#fff',
     }}
   >
@@ -239,7 +239,7 @@ const ChoThueXeCapCuu = () => {
       sx={{
         mt: 4,
         backgroundColor: '#fff',
-        color: '#d32f2f',
+        color: '#00796b',
         fontWeight: 600,
         borderRadius: '8px',
         '&:hover': { backgroundColor: '#f5f5f5' },
@@ -259,7 +259,7 @@ const ChoThueXeCapCuu = () => {
         <Typography
           variant="h5"
           fontWeight={700}
-          color="#d32f2f"
+          color="#00796b"
           sx={{ mb: 3, textAlign: 'center' }}
         >
           Hình Ảnh Xe Cấp Cứu
