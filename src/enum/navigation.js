@@ -6,7 +6,7 @@ export const NAVIGATION = [
     },
     {
         name: 'Dịch vụ điều dưỡng',
-        to: '/services',
+        to: '/dichvu',
     },
     {
         name: 'Dịch vụ chăm sóc y tế',
@@ -14,15 +14,15 @@ export const NAVIGATION = [
         children: [
             {
                 name: 'Dịch vụ test - xét nghiệm',
-                to: '/services/test'
+                to: '/dichvu/test'
             },
             {
                 name: 'Dịch vụ chăm bệnh',
-                to: '/services/care'
+                to: '/dichvu/chambenh'
             },
             {
                 name: 'Dịch vụ khác',
-                to: '/services/other'
+                to: '/dichvu/khac'
             },
         ]        
     },
@@ -32,15 +32,15 @@ export const NAVIGATION = [
         children: [
             {
                 name:'Cho thuê máy thở - oxy',
-                to: '/services/rent/oxygen'
+                to: '/dichvu/thue/oxygen'
             },
             {
                 name:'Cung cấp và đổi bình oxy',
-                to: '/services/rent/oxygen-supply'
+                to: '/dichvu/thue/cungcapbinhoxy'
             },
             {
                 name:'Cho thuê máy hút đàm',
-                to: '/services/rent/suction'
+                to: '/dichvu/thue/mayhutdam'
             },            
         ]
     },
