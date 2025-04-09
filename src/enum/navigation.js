@@ -45,19 +45,42 @@ export const NAVIGATION = [
         ]
     },
     {
-        name:'Cho thuê xe cứu thương',
-        to: '/services/rent/ambulance'
+        name: 'Cẩm nang',
+        icon:KeyboardArrowDownIcon,
+        children: [
+            {
+                name:'Chăm sóc da',
+                to: '/camnang/chamsocda'
+            },
+            {
+                name:'Chăm sóc xương khớp',
+                to: '/camnang/chamsocxuongkhop'
+            },
+            {
+                name:'Sức khỏe hô hấp',
+                to: '/camnang/suckhoehohap'
+            },    
+            {
+                name:'Sức khỏe tim mạch',
+                to: '/camnang/suckhoetimmach'
+            },           
+        ]
     },
     {
-        name:'Cẩm nang',
-        to: '/guide'
+        name:'Cho thuê xe cứu thương',
+        to: '/ChoThueXeCapCuu'
     },
+    {
+        name:'Tin Tức',
+        to: '/tintucyte'
+    },
+   
     {
         name:'Tuyển dụng',
-        to: '/recruitment'       
+        to: '/tuyendung'       
     },
     {
         name:'Liên hệ',
-        to: '/contact'
+        to: '/lienhe'
     },
 ]

@@ -96,21 +96,24 @@ export default function Header() {
                               transition: "all ease 0.2s",
                             }}
                           >
-                            {item.children.map((child, idx) => (
-                              <Box
-                                key={idx}
-                                sx={{
-                                  padding: "20px 10px",
-                                  transition: "all ease 0.2s",
-                                  color:'#4d494994',
-                                  "&:hover": {
-                                    color: "#000",
-                                  }
-                                }}
-                              >
-                                {child.name}
-                              </Box>
-                            ))}
+                           {item.children.map((child, idx) => (
+                        <Box
+                          key={idx}
+                          onClick={() => nav(child.to)}
+                          sx={{
+                            padding: "20px 10px",
+                            transition: "all ease 0.2s",
+                            color:'#4d494994',
+                            cursor: "pointer",
+                            "&:hover": {
+                              color: "#000",
+                            }
+                          }}
+                        >
+                          {child.name}
+                        </Box>
+                              ))}
+
                         </Stack>
                         )
                       }
