@@ -9,7 +9,6 @@ import {
   Stack, 
   Avatar,
   useTheme,
-  useMediaQuery
 } from '@mui/material';
 import {
   MedicalServices,
@@ -32,7 +31,6 @@ const pulseAnimation = keyframes`
 
 const Tuyendung = () => {
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
   return (
     <Box sx={{ 

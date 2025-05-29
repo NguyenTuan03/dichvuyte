@@ -10,7 +10,6 @@ import {
   Container,
   Grid,
   useTheme,
-  useMediaQuery,
 } from '@mui/material';
 import { Phone, Email, LocalHospital, DirectionsCar, AccessTime } from '@mui/icons-material';
 import { keyframes } from '@emotion/react';
@@ -23,7 +22,6 @@ const pulseAnimation = keyframes`
 
 const ChoThueXeCapCuu = () => {
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
   return (
     <Box sx={{ background: 'linear-gradient(to bottom, #f5f5f5 0%, #e0e0e0 100%)', py: { xs: 4, md: 6 } }}>
