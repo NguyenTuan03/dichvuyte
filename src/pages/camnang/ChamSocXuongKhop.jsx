@@ -163,22 +163,6 @@ export default function ChamSocXuongKhop() {
                           borderRadius: "12px",
                         }}
                       />
-                      <Typography
-                        variant="caption"
-                        sx={{
-                          position: "absolute",
-                          top: 12,
-                          left: 12,
-                          bgcolor: "#6a1b9a",
-                          color: "white",
-                          px: 2,
-                          py: 0.75,
-                          borderRadius: "6px",
-                          fontWeight: 500,
-                        }}
-                      >
-                        {article.date}
-                      </Typography>
                     </Box>
                     <Typography variant="h6" sx={{ fontWeight: 600, mb: 1.5 }}>
                       {article.title}

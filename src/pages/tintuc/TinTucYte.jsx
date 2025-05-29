@@ -218,22 +218,7 @@ export default function TinTucYTe() {
                           borderRadius: "12px",
                         }}
                       />
-                      <Typography
-                        variant="caption"
-                        sx={{
-                          position: "absolute",
-                          top: 12,
-                          left: 12,
-                          bgcolor: "#00796b",
-                          color: "white",
-                          px: 2,
-                          py: 0.75,
-                          borderRadius: "6px",
-                          fontWeight: 500,
-                        }}
-                      >
-                        {article.date}
-                      </Typography>
+    
                     </Box>
                     <Typography
                       variant="h6"
